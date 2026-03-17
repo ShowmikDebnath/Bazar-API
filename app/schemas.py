@@ -3,6 +3,8 @@ from typing import Optional, List
 from datetime import datetime
 
 
+
+
 '''
 # Users Schemas
 '''
@@ -22,7 +24,8 @@ class UserResponse(BaseModel):
     created_at: datetime
 
     class Config:
-        from_attributes: True
+        from_attributes = True
+
 
 
 '''
@@ -43,13 +46,13 @@ class ProductResponse(BaseModel):
     id: int
     name: str
     description: Optional[str]
-    price = float
+    price: float
     quantity: int
-    category: Optional[str] = None
-
+    category: Optional[str]
 
     class Config:
-        from_attributes: True
+        from_attributes = True
+
 
 
 '''
@@ -58,8 +61,8 @@ class ProductResponse(BaseModel):
 
 # What data is needed to create a Cart
 class CartCreate(BaseModel):
-    product_id = int
-    quantity = int
+    product_id: int
+    quantity: int
 
 
 # What data to show when returning a Cart
@@ -69,10 +72,8 @@ class CartResponse(BaseModel):
     product_id: int
     quantity: int
 
-
-
     class Config:
-        from_attributes: True
+        from_attributes = True
 
 
 '''
@@ -87,7 +88,8 @@ class OrderItemResponse(BaseModel):
     price: float
 
     class Config:
-        from_attributes: True
+        from_attributes = True
+
 
 
 
@@ -101,7 +103,7 @@ class OrderResponse(BaseModel):
     
 
     class Config:
-        from_attributes: True
+        from_attributes = True
 
 
 
@@ -109,7 +111,7 @@ class OrderResponse(BaseModel):
 # Auth Schemas
 '''
 
-class login(BaseModel):
+class Login(BaseModel):
     email: EmailStr
     password: str
 
