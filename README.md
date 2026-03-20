@@ -112,4 +112,3 @@ http://127.0.0.1:8000/docs
 **Showmik Debnath**
 - GitHub: [@ShowmikDebnath](https://github.com/ShowmikDebnath)
 - LinkedIn: [showmikdebnath](https://linkedin.com/in/showmikdebnath)
-- Portfolio: [showmikdebnath.github.io/portfolio](https://showmikdebnath.github.io/portfolio)
